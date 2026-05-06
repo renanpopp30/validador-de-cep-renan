@@ -37,30 +37,3 @@ cep.addEventListener('blur',  async () => {
   }
   
 });
-
-// =============================================
-  // 👇 SEU TRABALHO COMEÇA AQUI
-  // =============================================
-
-  // 1. Selecionar o input #cep
-  // 2. Adicionar evento 'blur' (quando o usuário clicar fora)
-  // 3. Dentro do evento:
-  //    a. Pegar o valor e limpar tudo que não for número (replace)
-  //    b. Validar se tem exatamente 8 dígitos
-  //    c. Fazer fetch GET para: https://viacep.com.br/ws/${cep}/json/
-  //    d. Verificar se data.erro === true (CEP não encontrado)
-  //    e. Preencher os campos com os dados retornados
-  //    f. Habilitar os campos (remover disabled)
-  //    g. Mostrar status de sucesso ou erro
-
-  // DICA — remover não-números de uma string:
-  // cep.replace(/\D/g, '')
-
-  // DICA — habilitar um campo:
-  // document.getElementById('rua').disabled = false
-
-  // DICA — adicionar classe ao spinner:
-  // document.getElementById('loader').classList.add('spinning')
-  // document.getElementById('loader').classList.remove('spinning')
-
-  console.log('Implemente a busca de CEP aqui!')
